@@ -1,16 +1,66 @@
-# React + Vite
+# Lunacal - Interactive Portfolio Component
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a responsive and interactive portfolio component built with React, Vite, and Tailwind CSS. It features a sleek, modern design with smooth animations and a mobile-first approach.
 
-Currently, two official plugins are available:
+![Project Screenshot](https://via.placeholder.com/800x400.png?text=Project+Screenshot)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- **Responsive Design**: Adapts to all screen sizes, from mobile to desktop.
+- **Interactive Navigation**: A custom navigation bar with a sliding effect and a hamburger menu for mobile.
+- **Dynamic Content**: The content area changes based on the selected navigation item.
+- **Image Gallery**: A horizontally scrollable image gallery with an option to add images.
+- **Modern Styling**: Styled with Tailwind CSS for a clean and modern look.
+- **Interactive Elements**: Hover and tap effects on buttons and gallery items for a better user experience.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies Used
 
-## Expanding the ESLint configuration
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces.
+- [Vite](https://vitejs.dev/) - A fast build tool for modern web projects.
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework.
+- [JavaScript (ES6+)](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/)
+- [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+- Node.js (v14 or later)
+- npm or yarn
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/AbhishekPatil1310/lunacal.git
+   ```
+2. Navigate to the project directory
+   ```sh
+   cd lunacal/frontend
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+
+### Running the Project
+
+To run the project in development mode, use the following command:
+
+```sh
+npm run dev
+```
+
+This will start the Vite development server, and you can view the project at `http://localhost:5173` (the port may vary).
+
+## Available Scripts
+
+In the project directory, you can run:
+
+- `npm run dev`: Runs the app in the development mode.
+- `npm run build`: Builds the app for production to the `dist` folder.
+- `npm run lint`: Lints the code using ESLint.
+- `npm run preview`: Serves the production build locally.
