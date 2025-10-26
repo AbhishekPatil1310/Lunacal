@@ -2,10 +2,10 @@ import React, { useRef, useState } from "react";
 
 const GalleryCard = () => {
   const [images, setImages] = useState([
-    "https://picsum.photos/300/200?1",
-    "https://picsum.photos/300/200?2",
-    "https://picsum.photos/300/200?3",
-    "https://picsum.photos/300/200?4",
+    "https://picsum.photos/200?1",
+    "https://picsum.photos/200?2",
+    "https://picsum.photos/200?3",
+    "https://picsum.photos/200?4",
   ]);
 
   const scrollRef = useRef(null);
@@ -38,7 +38,7 @@ const GalleryCard = () => {
 
         {/* Controls */}
         <div className="bg-gray-800/30 rounded-xl p-4 mb-6">
-          <div className="flex items-center justify-between">
+          <div className="flex flex-wrap items-center justify-center sm:justify-between gap-4">
             <button className="bg-gray-800 text-white px-4 py-2 rounded-lg font-semibold">
               Gallery
             </button>
@@ -52,7 +52,7 @@ const GalleryCard = () => {
               />
               <button
                 onClick={() => fileInputRef.current.click()}
-                className="bg-gray-800 text-white px-4 py-2 rounded-lg font-medium hover:scale-105 transition"
+                className="bg-gray-800 text-white px-4 py-2 rounded-lg font-medium hover:scale-105 active:scale-105 transition"
               >
                 + Add Image
               </button>
@@ -64,8 +64,8 @@ const GalleryCard = () => {
                            shadow-[4px_4px_8px_rgba(0,0,0,0.6),-4px_-4px_8px_rgba(255,255,255,0.05)] 
                            hover:shadow-[6px_6px_10px_rgba(0,0,0,0.7),-6px_-6px_10px_rgba(255,255,255,0.1)] 
                            hover:scale-110 
-                           active:bg-blue-400 active:shadow-[inset_2px_2px_5px_rgba(0,0,0,0.5),inset_-2px_-2px_5px_rgba(255,255,255,0.2)] 
-                           active:scale-95 transition-all duration-200"
+                           active:shadow-[6px_6px_10px_rgba(0,0,0,0.7),-6px_-6px_10px_rgba(255,255,255,0.1)] 
+                           active:scale-110 transition-all duration-200"
               >
                 ←
               </button>
@@ -75,8 +75,8 @@ const GalleryCard = () => {
                            shadow-[4px_4px_8px_rgba(0,0,0,0.6),-4px_-4px_8px_rgba(255,255,255,0.05)] 
                            hover:shadow-[6px_6px_10px_rgba(0,0,0,0.7),-6px_-6px_10px_rgba(255,255,255,0.1)] 
                            hover:scale-110 
-                           active:bg-blue-400 active:shadow-[inset_2px_2px_5px_rgba(0,0,0,0.5),inset_-2px_-2px_5px_rgba(255,255,255,0.2)] 
-                           active:scale-95 transition-all duration-200"
+                           active:shadow-[6px_6px_10px_rgba(0,0,0,0.7),-6px_-6px_10px_rgba(255,255,255,0.1)] 
+                           active:scale-110 transition-all duration-200"
               >
                 →
               </button>
@@ -93,7 +93,7 @@ const GalleryCard = () => {
             <div
               key={index}
               className="relative min-w-[140px] overflow-visible rounded-xl shadow-md transform transition-transform duration-500 ease-out origin-bottom-left 
-                         hover:rotate-[-3deg] hover:-translate-y-px hover:scale-105 hover:shadow-[0_25px_50px_rgba(0,0,0,0.95)] hover:z-50"
+                         hover:rotate-[-3deg] hover:-translate-y-px hover:scale-105 hover:shadow-[0_25px_50px_rgba(0,0,0,0.95)] hover:z-50 active:rotate-[-3deg] active:-translate-y-px active:scale-105 active:shadow-[0_25px_50px_rgba(0,0,0,0.95)] active:z-50"
             >
               <img
                 src={src}
